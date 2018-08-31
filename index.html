@@ -6,42 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Trivia Game</title>
 </head>
 
 <body>
     <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <div class="text-center">
+        <h1 id="title">Avengers Trivia Quiz!</h1>
+        <h3 id="correctAnswer"></h3>
+        <h3 id="incorrectAnswer"></h3>
+    </div>
     
-    <h1 id="title"></h1>
     
     <form id="form-id"action="">
+        <div class="time-container">
+            <h4 class="remaining">Time Remaining: </h4>
+            <h4 class="time"></h4>
+        </div>
         <div class="q1-container">
-            <input type="radio" id="r4" name="question1" value="correct">The Incredible Hulk</input> 
+            <h3 id='q1'>What was the first movie released in the Marvel Cinematic Universe?</h3>
+            <input type="radio" id="r4" name="question1" value="correct" style="color: red;">The Incredible Hulk</input> 
             <input type="radio" id="r4" name="question1" value="wrong">Iron Man</input> 
             <input type="radio" id="r4" name="question1" value="wrong">Captain America The First Avenger</input> 
             <input type="radio" id="r4" name="question1" value="wrong">Thor</input> 
         </div>
         <div class="q2-container">
-            <input type="radio" name="question2" value="wrong">The Time Stone</input> 
-            <input type="radio" name="question2" value="wrong">The Space Stone</input> 
-            <input type="radio" name="question2" value="correct">The Mind Stone</input> 
-            <input type="radio" name="question2" value="wrong">The Reality Stone</input> 
+            <h3 id ='q2'>Which Infinity stone was found inside Loki's septre?</h3>
+            <input type="radio" id ="r4" name="question2" value="wrong">The Time Stone</input> 
+            <input type="radio" id ="r4" name="question2" value="wrong">The Space Stone</input> 
+            <input type="radio" id ="r4" name="question2" value="correct">The Mind Stone</input> 
+            <input type="radio" id ="r4" name="question2" value="wrong">The Reality Stone</input> 
         </div>
         <div class="q3-container">
-            <input type="radio" name="question3" value="wrong">Adamantium</input> 
-            <input type="radio" name="question3" value="wrong">Titanium</input> 
-            <input type="radio" name="question3" value="correct">Vibranium</input> 
-            <input type="radio" name="question3" value="wrong">Wood</input> 
+            <h3 id ='q3'>Captain America's shield is made out of which material?</h3>
+            <input type="radio" id ="r4" name="question3" value="wrong">Adamantium</input> 
+            <input type="radio" id ="r4" name="question3" value="wrong">Titanium</input> 
+            <input type="radio" id ="r4" name="question3" value="correct">Vibranium</input> 
+            <input type="radio" id ="r4" name="question3" value="wrong">Wood</input> 
         </div>
         <div class="q4-container">
-            <input type="radio" name="question4" value="wrong">Iron Man</input> 
-            <input type="radio" name="question4" value="wrongs">The Avengers</input> 
-            <input type="radio" name="question4" value="correct">Iron Man 2</input> 
-            <input type="radio" name="question4" value="wrong">The Black Widow</input> 
+            <h3 id ='q4'>Black Widow's first apperance was in which film?</h3>
+            <input type="radio" id ="r4" name="question4" value="wrong">Iron Man</input> 
+            <input type="radio" id ="r4" name="question4" value="wrongs">The Avengers</input> 
+            <input type="radio" id ="r4" name="question4" value="correct">Iron Man 2</input> 
+            <input type="radio" id ="r4" name="question4" value="wrong">The Black Widow</input> 
         </div>
-        <button class="submit" onclick="return handleClick();" type="submit">Submit</button>
+        <!-- <button class="submit" onclick="return handleClick();" type="">Submit</button> -->
+        <div class="text-center">
+            <button type="button" class=".d-flex btn btn-secondary btn-dark submit" onclick="return submitAnswers();">Done</button>
+        </div>
     </form>
+    <footer>Copyright</footer>
     <script src="./assets/javascript/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

@@ -1,3 +1,121 @@
-.title {
+body {
+    background-image: url(../images/Avengers-Age-of-Ultron-Team-Poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+#title {
+    margin-top: 20px;
+    color: black; 
+    text-shadow:
+	-0.5px -0.5px 0 white,
+	0.5px -0.5px 0 white,
+	-0.5px 0.5px 0 white,
+	0.5px 0.5px 0 white;   
+}
+
+#form-id {
+    border: 2px solid black;
+    background-color: rgba(121, 121, 121, 0.9);
+    width: 1000px;
+    margin: auto;
+    /* width: 50%; */
+}
+
+#correctAnswer {
     color: black;
+    text-shadow:
+	-0.5px -0.5px 0 white,
+	0.5px -0.5px 0 white,
+	-0.5px 0.5px 0 white,
+	0.5px 0.5px 0 white;
+}
+
+#incorrectAnswer {
+    color: black;
+    text-shadow:
+	-0.5px -0.5px 0 white,
+	0.5px -0.5px 0 white,
+	-0.5px 0.5px 0 white,
+	0.5px 0.5px 0 white;
+
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.time {
+    display: inline;
+}
+
+.remaining {
+    display: inline;
+}
+
+.q1-container {
+    padding: 20px;
+    margin: auto;
+    width: 75%;
+    
+}
+.q2-container {
+    padding: 20px;
+    margin: auto;
+    width: 75%;
+    
+}
+.q3-container {
+    padding: 20px;
+    margin: auto;
+    width: 75%;
+    
+}
+.q4-container {
+    padding: 20px;
+    margin: auto;
+    width: 75%;    
+}
+
+.text-center {
+    padding: 10px;
+    padding-bottom: 17px;
+}
+
+input[type=search] {
+    color: blue;
+}
+
+#r4 {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+#q1 {
+    color: black;
+}
+
+#q2 {
+    color: black;
+}
+
+#q3 {
+    color: black;
+}
+
+#q4 {
+    color: black;    
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(121, 121, 121);
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
 }
